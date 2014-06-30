@@ -40,5 +40,5 @@ if [[ "$RBENV_VERSION" == jruby-1.6* ]]; then
 fi
 
 ~/.rbenv/bin/rbenv exec gem install bundler $BUNDLE_VERSION
-~/.rbenv/bin/rbenv exec bundle install
+~/.rbenv/bin/rbenv exec bundle install --without=production
 ~/.rbenv/bin/rbenv rehash
